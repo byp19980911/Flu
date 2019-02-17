@@ -18,7 +18,7 @@ class KeyState extends EventEmitter {
       .chain()
       .simplesort('timestamp', true)
       .data()
-    global.windows.broadcast(Types.SYNC_TRANSACTION, { keys })
+    global.windows.broadcast(Types.SYNC_KEY, { keys })
   }
 }
 
