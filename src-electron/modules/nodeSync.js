@@ -121,7 +121,7 @@ class NodeSync extends EventEmitter {
 
             return web3.eth.getBlock('latest').then(block => {
               const blockResult = block
-              const now = Math.floor(new Date().getTime() / 1000)
+              // const now = Math.floor(new Date().getTime() / 1000)
 
               if (!blockResult) {
                 return this._sync()
