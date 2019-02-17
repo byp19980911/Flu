@@ -1,0 +1,39 @@
+{
+  "clients": {
+    "indexchain": {
+      "version": "0.0.1",
+      "platforms": {
+        "mac": {
+          "download": {
+            "url": "http://res.imwallet.com/chain/indexchain-darwin-0_5_3.tar.gz",
+            "md5": "edb3f66853c662d13fc83024e38a1ab3",
+            "type": "tar",
+            "bin": "indexchain-darwin-0_5_3/indexchain"
+          },
+          "bin": "indexchain",
+          "commands": {
+            "sanity": {
+              "args": ["version"],
+              "output": ["indexchain", "0.5.3"]
+            }
+          }
+        },
+        "win": {
+          "download": {
+            "url": "http://res.imwallet.com/chain/indexchain-win-0_5_3.zip",
+            "md5": "c32ac978e5c30c8c6fb058723ff1e52e",
+            "type": "zip",
+            "bin": "indexchain-win-0_5_3\\indexchain.exe"
+          },
+          "bin": "indexchain.exe",
+          "commands": {
+            "sanity": {
+              "args": ["version"],
+              "output": ["indexchain", "0.0.1"]
+            }
+          }
+        }
+      }
+    }
+  }
+}
